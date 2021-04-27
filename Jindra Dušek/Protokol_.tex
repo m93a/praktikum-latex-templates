@@ -1,0 +1,171 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}\usepackage{lmodern}
+\usepackage[top = 2cm, bottom = 2cm, left = 2cm, right = 2cm]{geometry}
+\usepackage{lettrine}
+\usepackage{titlesec}
+\usepackage{pdfpages}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{microtype}
+
+%For title page
+\usepackage{setspace} %Rámeček nahoře
+\usepackage{framed} %Rámeček nahoře
+\usepackage{array} %Tabulka dole
+
+%\usepackage{jindra_basic}
+\usepackage{titling}
+\setlength{\droptitle}{-4\baselineskip}
+\pretitle{\begin{center}\huge\bfseries}
+\posttitle{\end{center}}
+\renewcommand\thesection{\Roman{section}}
+\renewcommand\thesubsection{\arabic{subsection}}
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{}
+\titleformat{\subsection}[block]{\bfseries \large}{\thesubsection.}{1em}{}
+
+\usepackage{float}
+\newfloat{Graf}{htbp}{aux}
+
+\graphicspath{{obr}}
+
+\begin{document}
+
+
+\thispagestyle{empty}
+\newgeometry{top = 2.5cm, bottom = 0cm, left = 2.5cm, right = 3cm}
+
+{ % V tomhle je uzavřena celá titulka
+%Tloušťka rámečku
+\setlength{\fboxrule}{1.5pt}
+
+\noindent
+\framebox{
+\begin{minipage}{\textwidth}
+\setlength{\parindent}{17.62482 pt}
+\phantom{d}
+
+\begin{minipage}{0.6\textwidth}
+{
+\Large Kabinet výuky obecné fyziky, UK MFF\\
+}
+\vspace*{0.2cm}
+
+{
+\bfseries
+\huge Fyzikální praktikum III
+}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{center}
+\includegraphics[width=4.5cm]{ZFP.jpg}
+\end{center}
+\end{minipage}\\\\
+
+%\vspace*{0.5cm}
+
+{
+\setstretch{1.5}
+\Large
+\noindent
+Úloha č. <++>
+
+\noindent
+Název úlohy: <++>\\
+\noindent
+Jméno: Jindřich Dušek
+\hspace*{\fill}
+Obor: FOF
+
+\noindent
+Datum měření: <++>
+\hspace*{\fill}
+Datum odevzdání: <++>
+
+\phantom{d}
+}
+\end{minipage}
+}
+%Konec horního rámečku
+
+{
+\phantom{d}
+
+\Large
+Připomínky opravujícího:\\
+\vspace*{6.75cm}
+}
+
+{
+\newcommand{\linka}{\noalign{\hrule height 1pt}}
+\newcommand{\linkadva}{\noalign{\hrule height 1.5pt}}
+\setlength\extrarowheight{9.5pt}
+\Large
+\noindent
+\begin{tabular}{!{\vrule width 1.5pt} l !{\vrule width 1pt} c !{\vrule width 1pt} c !{\vrule width 1.5pt}}
+\linkadva
+   & Možný počet bodů & Udělený počet bodů \\\linkadva
+  Teoretická část & 0-2 &  \\\linka
+  Výsledky a zpracování měření & 0-9 &  \\\linka
+  Diskuse výsledků & 0-4 &  \\\linka
+  Závěr & 0-1 &  \\\linka
+  Použitá literatura & 0-1 &  \\\linkadva
+  \hspace*{\fill} \textbf{Celkem} \hspace*{\fill}& max. 17 &  \\
+\linkadva
+\end{tabular}
+}
+\phantom{d}
+
+Posuzoval: \hspace*{\fill}dne:~~~~~~~~~~~~~~~~~
+
+}
+\newpage
+\newgeometry{top = 2cm, bottom = 2cm, left = 2cm, right = 2cm}
+\setcounter{page}{1}
+
+
+%-------------------- ZAČÁTEK PROTOKOLU ------------------------
+
+\section{Úkol}
+\begin{enumerate}
+\item <++>
+
+\end{enumerate}
+
+\section{Teorie}
+
+
+\section{Výsledky a zpracování měření}
+
+
+\section{Diskuse}
+
+
+
+\section{Závěr}
+
+
+
+
+
+\section{Literatura}
+\begin{itemize}
+\item[[1\hspace*{-0.18cm}]] Kolektiv ZFP KVOF MFF UK, \emph{15. Charakteristiky triody}, \url{https://physics.mff.cuni.cz/vyuka/zfp/_media/zadani/texty/txt_215.pdf}, 11.\,11. 2019
+\item[[2\hspace*{-0.18cm}]] B. VYBÍRAL, \emph{Zpracování dat fyzikálních měření}, Hradec Králové: MAFY, 2002
+%\item[[4\hspace*{-0.18cm}]] Wikimedia Foundation, \emph{Avogadrova konstanta}, \url{https://cs.wikipedia.org/wiki/Avogadrova_konstanta}, 9.\,4. 2019
+\end{itemize}
+
+
+
+
+
+\end{document}
+
